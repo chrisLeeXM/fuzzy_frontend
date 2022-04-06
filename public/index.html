@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+  <style lang="scss" scoped>
+    @import "@/styles/index.scss";
+    html,
+    body,
+    #app {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>
+    <strong>
+      很抱歉，如果没有 JavaScript 支持，<%= htmlWebpackPlugin.options.title %> 将不能正常工作。请启用浏览器的 JavaScript 然后继续。
+    </strong>
+  </noscript>
+  <div id="app">
+    <div class="home">
+      <div class="home_main">
+        <img class="home_loading" src="<%= BASE_URL %>assets/img/loading-spin.svg" alt="loading" />
+        <div class="home_title">
+          正在加载资源
+        </div>
+        <div class="home_sub-title d">
+          初次加载资源可能需要较多时间 请耐心等待
+        </div>
+      </div>
+      <div class="home_footer">
+        <a href="https://baidu.com" target="_blank">
+          https://baidu.com </a> <!-- TODO: 修改网址 -->
+      </div>
+    </div>
+  </div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>
